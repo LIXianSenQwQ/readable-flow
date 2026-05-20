@@ -50,19 +50,7 @@ Do not make the reader jump through many one-line private methods to reconstruct
 
 A method may be long if it stays readable. Structure the method as a top-to-bottom flow with step comments before meaningful business blocks.
 
-For Chinese Java projects, prefer comments in this style:
 
-```java
-// 步骤1：校验输入参数，避免后续流程处理无效请求
-
-// 步骤2：读取订单与用户信息，保证业务判断基于最新状态
-
-// 步骤3：根据当前订单状态执行业务校验
-
-// 步骤4：保存结果并返回调用方需要的响应
-```
-
-For English projects, use the equivalent:
 
 ```java
 // Step 1: Validate input before the business flow starts

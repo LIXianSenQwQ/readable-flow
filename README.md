@@ -1,6 +1,6 @@
 # Readable Flow
 
-Readable Flow 是一个面向 Java Spring 和后端项目的 Codex skill，用来约束 AI 生成更容易被人阅读和维护的代码。
+Readable Flow 是一个面向 Java Spring 和后端项目的 Skill，用来约束 AI 生成更容易被人阅读和维护的代码。
 
 它不反对封装，而是反对过度封装：不要为了“看起来工程化”，把一个本来可以顺序阅读的业务流程拆散到许多零散小方法、Helper、Manager、Processor、接口或抽象层里。
 
