@@ -1,0 +1,4 @@
+interface:
+  display_name: "Readable Flow"
+  short_description: "Keep Java/Spring code readable, not over-wrapped"
+  default_prompt: "Use $readable-flow to produce one-entry, linear, human-readable Java Spring code and justify any extraction or abstraction."
