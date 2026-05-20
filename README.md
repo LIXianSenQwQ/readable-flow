@@ -1,21 +1,21 @@
 # Readable Flow
 
-Readable Flow is a Codex skill for Java Spring and backend work. It helps keep AI-generated code human-readable by favoring one clear entry method, a linear top-to-bottom flow, and explicit step comments.
+Readable Flow 是一个面向 Java Spring 和后端项目的 Codex skill，用来约束 AI 生成更容易被人阅读和维护的代码。
 
-The skill is not against encapsulation. It is against over-encapsulation that scatters one business use case across too many tiny helpers, managers, processors, interfaces, or abstract layers.
+它不反对封装，而是反对过度封装：不要为了“看起来工程化”，把一个本来可以顺序阅读的业务流程拆散到许多零散小方法、Helper、Manager、Processor、接口或抽象层里。
 
-## Use It When
+## 适用场景
 
-- You want Java Spring code that is easy to read from the main service method.
-- AI is likely to split simple business logic into too many small methods.
-- You want a large method to stay acceptable when it has clear step structure.
-- You want every extraction or abstraction to justify how it improves readability.
+- 希望 Java Spring 代码能从主 service 方法顺着读懂。
+- AI 容易把简单业务逻辑拆成过多小方法。
+- 允许一个较长方法，但要求它有清晰的步骤结构。
+- 希望每一次方法提取或抽象都能说明它如何提升可读性。
 
-## Core Rule
+## 核心规则
 
-Prefer one readable flow first. Extract methods or abstractions only when they make the business process easier to understand.
+优先保留一个清晰、线性的主流程。只有当提取方法或引入抽象能让业务流程更容易理解时，才允许这么做。
 
-## Files
+## 文件说明
 
-- `SKILL.md` - default skill instructions.
-- `agents/openai.yaml` - UI metadata for Codex.
+- `SKILL.md`：默认 skill 指令。
+- `agents/openai.yaml`：Codex 使用的界面元数据。
